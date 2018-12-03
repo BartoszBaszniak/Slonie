@@ -30,7 +30,7 @@ int main()
     int i;
 
     FILE*plik;
-    plik=fopen("slo0.in","r"); //sciezka dostepu do pliku
+    plik=fopen("slo0.in","r");          //file path
     fscanf(plik,"%d",&N);
     for(i=0;i<N;i++)
         {
