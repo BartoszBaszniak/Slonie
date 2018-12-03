@@ -52,8 +52,8 @@ int main()
         }
     for(i=0;i<N;i++)
         {
-            r=dp[i]-1;
-            permut[r]=p[i]-1; //permutation of the set
+            r=dp[i];
+            permut[r]=p[i]; //permutation of the set
         }
     for(int y=0;y<N;y++)
         {
@@ -67,7 +67,7 @@ int main()
                         {
                             suma=suma+w[i];
                             minC=min(minC,w[i]);   //minimal weight of cycle
-                            i=permut[i];
+                            i=permut[i+1]-1;
                             x[i]=dp[i];
                             ++C;
                             if(i==y)
